@@ -1,7 +1,7 @@
 ﻿// Написать программу сортировки массива от большего к меньшему.
 // Массив задается размерностью N с клавиатуры, далее заполняется случайными целыми числами.
 
-Console.WriteLine("Write number");
+Console.Write("Введите размер массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
 for (int i = 0; i < n; i++)
@@ -26,6 +26,5 @@ void sort(int[] array)
         array[max] = temp;
         Console.Write($"{array[i]}, ");
     }
-
 }
 sort(array);
